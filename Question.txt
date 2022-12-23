@@ -1,0 +1,20 @@
+1. Bank database:
+Customer (Cust_ID, Cname, Age, Cust_type)
+Bank( BankID, Bname, Bcity, bank_tire)
+Loan( LoanID, Cust_ID,BankID, Amount, No_of_emi_type)
+
+i) Cust_type should be Regular, Priority, Corporate
+ii) bank tire should be between 1 to 5 (indicating level of priority/ importance)
+
+Write a PHP code to create the above relations in Mysql specifying integrity constraints. 
+Insert sufficient records in each table so that the following queries yield some result:
+
+1. Insert data into the database through HTML page using PHP. (for all/one table only)
+2. Display in HTML table using PHP. (for all/one table only)
+3. Update data by Id using PHP.  (for all/one table only)
+
+a. list the name of all corporate customers who have taken more than one loan.
+
+b. Give the list of all tier 3 banks from where Mr. Anamitra Mandal has taken a loan.
+
+c. List all car loans amount along with loanID which have more than 25 emi.

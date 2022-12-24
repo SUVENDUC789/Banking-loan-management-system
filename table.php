@@ -135,7 +135,7 @@ for($i=0;$i<$num;$i++){
 <?php
 include 'connection/dbcon.php';
 
-$sql="SELECT * FROM loan,customer,bank WHERE `loan`.`Cust_ID`=`customer`.`Cust_ID` AND `loan`.`BankID`=`bank`.`BankID`";
+$sql="SELECT * FROM `loan` INNER JOIN `customer` ON `loan`.`Cust_ID`=`customer`.`Cust_ID` INNER JOIN `bank` ON `loan`.`BankID`=`bank`.`BankID`";
 $result=mysqli_query($conn,$sql);
 $num=mysqli_num_rows($result);
 // echo $num;
